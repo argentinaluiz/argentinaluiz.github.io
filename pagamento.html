@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Pagamento - Cafeteria Xpto</title>
+  </head>
+  <body class="bg-gray-900">
+    <!-- Menu -->
+    <div class="flex items-center justify-between bg-gray-800 p-4">
+      <svg class="w-6 h-6 text-white cursor-pointer">
+        <path
+          d="M0 0h24v2H0zm0 5h24v2H0zm0 5h24v2H0z"
+          fill="currentColor"
+        ></path>
+      </svg>
+      <h1 class="text-2xl font-bold text-white">Cafeteria Xpto</h1>
+      <div></div>
+    </div>
+
+    <div class="container mx-auto px-4 mt-8">
+      <h1 class="text-2xl font-bold text-white mb-4">Tela de Pagamento</h1>
+  
+      <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+        <h2 class="text-xl font-bold text-white mb-4">Resumo do Carrinho</h2>
+  
+        <!-- Lista de cafés do carrinho -->
+        <ul class="text-gray-200">
+          <li>Café 1 - Qtd. 1 - R$ 10,00</li>
+          <li>Café 2 - Qtd. 2 - R$ 20,00</li>
+          <li>Café 3 - Qtd. 1 - R$ 4,00</li>
+        </ul>
+
+        <label class="text-white">Total: R$ 34,00</label>
+  
+        <div class="mt-6">
+          <h2 class="text-xl font-bold text-gray-200 mb-4">Método de Pagamento</h2>
+  
+          <div class="flex items-center mb-4">
+            <input type="radio" id="cartao-credito" name="metodo-pagamento" class="mr-2" checked>
+            <label for="cartao-credito" class="font-bold text-gray-200">Cartão de Crédito</label>
+            &nbsp;
+            <input type="radio" id="cartao-credito" name="metodo-pagamento" class="mr-2" checked>
+            <label for="cartao-credito" class="font-bold text-gray-200">Boleto</label>
+            &nbsp;
+            <input type="radio" id="cartao-credito" name="metodo-pagamento" class="mr-2" checked>
+            <label for="cartao-credito" class="font-bold text-gray-200">Dinheiro</label>
+            &nbsp;
+            <input type="radio" id="cartao-credito" name="metodo-pagamento" class="mr-2" checked>
+            <label for="cartao-credito" class="font-bold text-gray-200">Pix</label>
+          </div>
+  
+          <!-- Formulário de dados do cartão de crédito -->
+          <form>
+            <div class="mb-4">
+              <label for="numero-cartao" class="block text-sm font-medium text-gray-200">Número do Cartão</label>
+              <input type="text" id="numero-cartao" name="numero-cartao" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+            </div>
+  
+            <div class="mb-4">
+              <label for="nome-cartao" class="block text-sm font-medium text-gray-200">Nome do Titular</label>
+              <input type="text" id="nome-cartao" name="nome-cartao" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+            <div class="mb-4">
+              <label for="validade-cartao" class="block text-sm font-medium text-gray-200">Validade</label>
+              <input type="text" id="validade-cartao" name="validade-cartao" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+            </div>
+  
+            <div class="mb-4">
+              <label for="cvv-cartao" class="block text-sm font-medium text-gray-200">CVV</label>
+              <input type="text" id="cvv-cartao" name="cvv-cartao" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+            </div>
+  
+            <button class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md">Pagar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

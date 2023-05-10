@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Criar café - Cafeteria Xpto</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="flex items-center justify-between bg-gray-800 p-4">
+      <svg class="w-6 h-6 text-white cursor-pointer">
+        <path d="M0 0h24v2H0zm0 5h24v2H0zm0 5h24v2H0z" fill="currentColor"></path>
+      </svg>
+      <h1 class="text-2xl font-bold text-white">Cafeteria Xpto</h1>
+      <div></div>
+    </div>
+    
+    <div class="p-4 bg-gray-900">
+      <h1 class="text-3xl font-bold text-white">Cadastrar Café</h1>
+    
+      <form class="mt-8">
+        <div class="grid grid-cols-1 gap-4">
+          <div>
+            <label for="nome" class="text-lg font-semibold text-white">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+              placeholder="Nome do café"
+            />
+          </div>
+    
+          <div>
+            <label for="descricao" class="text-lg font-semibold text-white"
+              >Descrição:</label
+            >
+            <textarea
+              id="descricao"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+              placeholder="Descrição do café"
+              rows="4"
+            ></textarea>
+          </div>
+    
+          <div>
+            <label for="imagem" class="text-lg font-semibold text-white"
+              >Imagem:</label
+            >
+            <input
+              type="file"
+              id="imagem"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+            />
+          </div>
+    
+          <div>
+            <label for="preco" class="text-lg font-semibold text-white"
+              >Preço:</label
+            >
+            <input
+              type="number"
+              id="preco"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+              placeholder="Preço do café"
+            />
+          </div>
+    
+          <div>
+            <label for="origem" class="text-lg font-semibold text-white"
+              >Origem:</label
+            >
+            <select
+              id="origem"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+            >
+              <option value="">País de origem</option>
+              <option value="brasil">Brasil</option>
+              <option value="colombia">Colômbia</option>
+              <option value="etiópia">Etiópia</option>
+              <option value="costa-rica">Costa Rica</option>
+            </select>
+          </div>
+          <div>
+            <label for="tipo-grao" class="text-lg font-semibold text-white"
+              >Tipo de Grão:</label
+            >
+            <select
+              id="tipo-grao"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+            >
+              <option value="">Selecione um tipo de grão</option>
+              <option value="arabica">Arábica</option>
+              <option value="robusta">Robusta</option>
+            </select>
+          </div>
+    
+          <div>
+            <label for="aroma" class="text-lg font-semibold text-white"
+              >Aroma:</label
+            >
+            <input
+              type="text"
+              id="aroma"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+              placeholder="Aroma do café"
+            />
+          </div>
+    
+          <div>
+            <label for="sabor" class="text-lg font-semibold text-white"
+              >Sabor:</label
+            >
+            <input
+              type="text"
+              id="sabor"
+              class="bg-white border border-gray-300 p-2 rounded-md mt-2"
+              placeholder="Sabor do café"
+            />
+          </div>
+        </div>
+    
+        <button
+          type="submit"
+          class="bg-green-500 text-white px-4 py-2 rounded-lg mt-4"
+        >
+          Cadastrar
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

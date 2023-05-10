@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Home - Cafeteria Xpto</title>
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen bg-gray-900">
+      <!-- Menu -->
+      <div class="flex items-center justify-between bg-gray-800 p-4">
+        <svg class="w-6 h-6 text-white cursor-pointer">
+          <path d="M0 0h24v2H0zm0 5h24v2H0zm0 5h24v2H0z" fill="currentColor"></path>
+        </svg>
+        <h1 class="text-2xl font-bold text-white">Cafeteria Xpto</h1>
+        <div></div>
+      </div>
+    
+      <!-- Área principal -->
+      <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-white mb-4">Últimas Promoções</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Card 1 -->
+          <div class="bg-gray-800 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold text-white">
+              Desconto de 20% em Cafés Gourmet
+            </h3>
+            <p class="text-gray-300 mt-2">
+              Aproveite essa promoção exclusiva em nossos cafés gourmet. Desconto
+              válido por tempo limitado.
+            </p>
+            <a href="#" class="text-green-500 hover:text-green-600 mt-4">Acessar</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-gray-800 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold text-white">
+              Compre 2 pacotes de café e leve o terceiro de graça
+            </h3>
+            <p class="text-gray-300 mt-2">
+              Compre dois pacotes de café e ganhe o terceiro gratuitamente.
+              Aproveite essa oferta especial.
+            </p>
+            <a href="#" class="text-green-500 hover:text-green-600 mt-4">Acessar</a>
+          </div>
+        </div>
+    
+        <h2 class="text-3xl font-bold text-white mt-8">Cafés em Destaque</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <!-- Café Espresso -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg flex flex-col justify-center items-center"
+          >
+            <h3 class="text-lg font-semibold text-white mb-2">Café Espresso</h3>
+            <p class="text-gray-300">Origem: Brasil</p>
+            <p class="text-gray-300">Sabor: Intenso</p>
+            <p class="text-gray-300">Aroma: Encorpado</p>
+            <p class="text-gray-300">Preço: R$ 15,00</p>
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 mt-4"
+            >
+              Comprar
+            </button>
+          </div>
+          <!-- Cappuccino -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg flex flex-col justify-center items-center"
+          >
+            <h3 class="text-lg font-semibold text-white mb-2">Cappuccino</h3>
+            <p class="text-gray-300">Origem: Itália</p>
+            <p class="text-gray-300">Sabor: Equilibrado</p>
+            <p class="text-gray-300">Aroma: Suave</p>
+            <p class="text-gray-300">Preço: R$ 18,00</p>
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 mt-4"
+            >
+              Comprar
+            </button>
+          </div>
+    
+          <!-- Mocha -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg flex flex-col justify-center items-center"
+          >
+            <h3 class="text-lg font-semibold text-white mb-2">Mocha</h3>
+            <p class="text-gray-300">Origem: Etiópia</p>
+            <p class="text-gray-300">Sabor: Chocolate e café</p>
+            <p class="text-gray-300">Aroma: Avelã</p>
+            <p class="text-gray-300">Preço: R$ 20,00</p>
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 mt-4"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

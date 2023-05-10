@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Busca café - Cafeteria Xpto</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="flex items-center justify-between bg-gray-800 p-4">
+      <svg class="w-6 h-6 text-white cursor-pointer">
+        <path d="M0 0h24v2H0zm0 5h24v2H0zm0 5h24v2H0z" fill="currentColor"></path>
+      </svg>
+      <h1 class="text-2xl font-bold text-white">Cafeteria Xpto</h1>
+      <div></div>
+    </div>
+    
+    <div class="p-4 bg-gray-900">
+      <h1 class="text-3xl font-bold text-white">Encontre seu café</h1>
+      
+      <div class="flex items-center mt-4">
+        <div class="mr-4">
+          <label for="aroma" class="text-lg font-semibold text-white">Aromas:</label>
+          <select name="aroma" id="aroma" class="bg-white border border-gray-300 p-2 rounded-md mt-2">
+            <option value="">Selecione um aroma</option>
+            <!-- Opções do select de aromas -->
+          </select>
+        </div>
+        
+        <div class="mr-4">
+          <label for="sabor" class="text-lg font-semibold text-white">Sabores:</label>
+          <select name="sabor" id="sabor" class="bg-white border border-gray-300 p-2 rounded-md mt-2">
+            <option value="">Selecione um sabor</option>
+            <!-- Opções do select de sabores -->
+          </select>
+        </div>
+        
+        <div>
+          <label for="origem" class="text-lg font-semibold text-white">Origens de café:</label>
+          <select name="origem" id="origem" class="bg-white border border-gray-300 p-2 rounded-md mt-2">
+            <option value="">Selecione uma origem</option>
+            <!-- Opções do select de origens de café -->
+          </select>
+        </div>
+      </div>
+      
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold text-white">Cafés encontrados:</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div class="bg-gray-700 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold">
+            <h3 class="text-lg font-semibold text-white">Café Especial</h3>
+            <p class="text-gray-300">Origem: Brasil</p>
+            <p class="text-gray-300">Sabor: Intenso</p>
+            <p class="text-gray-300">Aroma: Encorpado</p>
+            <p class="text-gray-300">Preço: R$ 15,00</p>
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg mt-4">Comprar</button>
+          </div>
+          
+          <div class="bg-gray-700 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold text-white">Café Cappuccino</h3>
+            <p class="text-gray-300">Origem: Itália</p>
+            <p class="text-gray-300">Sabor: Equilibrado</p>
+            <p class="text-gray-300">Aroma: Suave</p>
+            <p class="text-gray-300">Preço: R$ 18,00</p>
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg mt-4">Comprar</button>
+          </div>
+          
+          <div class="bg-gray-700 bg-white p-4 rounded-lg">
+            <h3 class="text-lg font-semibold text-white">Café Mocha</h3>
+            <p class="text-gray-300">Origem: Etiópia</p>
+            <p class="text-gray-300">Sabor: Chocolate e café</p>
+            <p class="text-gray-300">Aroma: Avelã</p>
+            <p class="text-gray-300">Preço: R$ 20,00</p>
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg mt-4">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
